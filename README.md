@@ -35,8 +35,8 @@ cargo run
 
 ## api
 
-- [] /api/register
-- [] /api/login
+- [x] /api/register
+- [x] /api/login
 - [] /api/logout
 - [] /api/v1/form
 - [] /api/v1/json

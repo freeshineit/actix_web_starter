@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/css/register_login.css" />
+</head>
+
+<body>
+    <div class="container-center">
+        <div class="title">Form</div>
+        <form id="form" action="/api/login_form" method="post" style="margin-bottom: 20px;">
+            <input name="email" placeholder="Email" type="email" id="email" />
+            <input name="password" placeholder="Password" type="password" id="password" />
+            <button type="submit">Login</button>
+        </form>
+
+
+        <div class="title">javascript</div>
+        <form id="form_js">
+            <input name="email" placeholder="Email" type="email" id="email_js" />
+            <input name="password" placeholder="Password" type="password" id="password_js" />
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+        (function () {
+            const form = document.getElementById('form_js')
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = document.getElementById('email_js').value
+                const password = document.getElementById('password_js').value
+
+                fetch("/api/login_form", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+                    },
+                    body: new URLSearchParams({
+                        email: email,
+                        password: password
+                    })
+                }).then(res => {
+                    return res.json();
+                }).then(res => {
+                    console.log(res)
+                })
+            })
+
+        }
+        )();
+    </script>
+</body>
+
+</html>

@@ -31,3 +31,19 @@ cargo run
 └── static     # static files
     └── index.css
 ```
+
+
+## api
+
+- [] /api/register
+- [] /api/login
+- [] /api/logout
+- [] /api/v1/form
+- [] /api/v1/json
+- [] /api/v1/user/[id] (GET)
+- [] /api/v1/user/[id] (PUT)
+- [] /api/v1/user/[id] (DELETE)
+
+- [] /api/v1/upload
+- [] /api/v1/upload/chunk
+  

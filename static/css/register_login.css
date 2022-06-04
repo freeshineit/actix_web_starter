@@ -1,0 +1,53 @@
+.container-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+form, input, button{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input, button  {
+    height: 32px;
+    margin-bottom: 15px;
+    border: 1px solid #dedede;
+    padding: 5px 10px;
+    border-radius: 2px;
+    outline: none;
+    width: 250px;
+}
+
+button {
+    margin-bottom: 0px;
+    cursor: pointer;
+    border: 1px solid #0099e5;
+    background-color: #0099e5;
+    color: #fff;
+    font-size: 14px;
+}
+
+input:hover , input:active, input:focus-visible, button:hover{
+    border: 1px solid #0099e5;
+}
+
+
+
+
+

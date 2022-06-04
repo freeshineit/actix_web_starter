@@ -9,6 +9,11 @@ license = "MIT"
 
 [dependencies]
 actix-web = "4"
-serde = {version = "1.0", features = ["derive"]}
+actix-cors = "0.6"
 actix-files = "0.6.0"
+
+serde = {version = "1.0", features = ["derive"]}
+env_logger = "0.9"
+log = "0.4"
+
 
